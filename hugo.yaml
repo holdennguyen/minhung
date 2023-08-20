@@ -1,0 +1,27 @@
+baseURL: 'https://holdennguyen.github.io/minhung/'
+languageCode: 'en-us'
+title: 'My New Hugo Site'
+theme: 'PaperMod'
+params:
+    homeInfoParams:
+        Title: Hi there wave
+        Content: Can be Info, links, about...
+
+    socialIcons: # optional
+        - name: "Instagram"
+          url: "https://www.instagram.com/__minhung__/"
+        - name: "Facebook"
+          url: "https://www.facebook.com/minhung.6174"
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000gi
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+outputs:
+  home:
+      - HTML
+      - RSS
+      - JSON
